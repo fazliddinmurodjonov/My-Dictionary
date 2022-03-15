@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dictionary_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.fragment.HomeFragment"
+        android:label="My Dictionary"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.fragment.FavouriteFragment"
+        android:label="fragment_favourite"
+        tools:layout="@layout/fragment_favourite" >
+        <action
+            android:id="@+id/action_favouriteFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_mainViewPagerFragment"
+            app:destination="@id/mainViewPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.fragment.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/mainViewPagerFragment"
+        android:name="com.fragment.MainViewPagerFragment"
+        android:label="fragment_main_view_pager"
+        tools:layout="@layout/fragment_main_view_pager" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.fragment.SettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_wordsFragment"
+            app:destination="@id/wordsFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_editWordFragment"
+            app:destination="@id/editWordFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_addWordFragment2"
+            app:destination="@id/addWordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.fragment.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/wordsFragment"
+        android:name="com.fragment.WordsFragment"
+        android:label="fragment_words"
+        tools:layout="@layout/fragment_words" />
+    <fragment
+        android:id="@+id/addWordFragment"
+        android:name="com.fragment.AddWordFragment"
+        android:label="Add word"
+        tools:layout="@layout/fragment_add_word" />
+    <fragment
+        android:id="@+id/editWordFragment"
+        android:name="com.fragment.EditWordFragment"
+        android:label="Edit word"
+        tools:layout="@layout/fragment_edit_word" />
+</navigation>

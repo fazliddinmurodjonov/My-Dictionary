@@ -1,0 +1,147 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.fragment.EditWordFragment">
+
+    <ImageView
+        android:id="@+id/wordImage"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/place_holder"
+        app:layout_constraintBottom_toTopOf="@id/imageTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/imageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_regular"
+        android:text="Add photo belonging to the word"
+        android:textColor="@color/iconColor"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/categorySpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wordImage"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/background_spinner"
+        app:layout_constraintBottom_toTopOf="@id/wordLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageTitle"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/down_arrow"
+        app:layout_constraintBottom_toBottomOf="@id/categorySpinner"
+        app:layout_constraintEnd_toEndOf="@id/categorySpinner"
+        app:layout_constraintTop_toTopOf="@id/categorySpinner"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/wordLayout"
+        style="@style/OutlinedRoundBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:textColorHint="@color/iconColor"
+        app:layout_constraintBottom_toTopOf="@id/wordTranslationLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/categorySpinner"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/word"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/font_regular"
+            android:hint="Enter word"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/wordTranslationLayout"
+        style="@style/OutlinedRoundBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:textColorHint="@color/iconColor"
+        app:layout_constraintBottom_toTopOf="@id/saveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wordLayout"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/wordTranslation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/font_regular"
+            android:hint="Enter translation word"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:stateListAnimator="@null"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/background_button_save"
+        android:fontFamily="@font/font_regular"
+        android:textStyle="bold"
+        android:padding="0dp"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wordTranslationLayout"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:stateListAnimator="@null"
+        android:layout_marginEnd="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/background_button_cancel"
+        android:fontFamily="@font/font_regular"
+        android:padding="0dp"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toStartOf="@id/saveButton"
+        app:layout_constraintTop_toBottomOf="@id/wordTranslationLayout"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

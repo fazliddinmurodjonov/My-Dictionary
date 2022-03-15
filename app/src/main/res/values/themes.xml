@@ -1,0 +1,59 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AndroidDatabaseLesson9" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+<!--        <item name="colorOnSurface">@color/iconColor</item>&lt;!&ndash;inputtext unfocused color&ndash;&gt;-->
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.ActionBar" parent="android:style/TextAppearance">
+        <item name="fontFamily">@font/font_medium</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/darkInk</item>
+    </style>
+
+    <style name="Theme.AndroidDatabaseLesson9.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="Theme.AndroidDatabaseLesson9.PopupOverlap" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="TextViewRegular" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/darkInk</item>
+        <item name="fontFamily">@font/font_regular</item>
+    </style>
+
+    <style name="TextViewMedium" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/darkInk</item>
+        <item name="fontFamily">@font/font_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="OutlinedRoundBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="shapeAppearanceOverlay" tools:ignore="PrivateResource">
+            @style/ShapeAppearanceOverlay
+        </item>
+
+    </style>
+
+    <style name="ShapeAppearanceOverlay" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#FF0000</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+</resources>

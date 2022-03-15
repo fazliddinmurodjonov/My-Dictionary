@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/edit"
+        android:icon="@drawable/edit_popup_menu"
+        android:iconTintMode="src_in"
+        android:title="Edit" />
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/delete_popup_menu"
+        android:iconTintMode="src_in"
+        android:title="Delete" />
+</menu>
