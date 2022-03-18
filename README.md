@@ -9,7 +9,7 @@
 
 
 
-<h3>I have made icons for that app.<h3>
+<h3>I made icons for that app.<h3>
 
 <img src="images/icons.png">
 
