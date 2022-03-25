@@ -13,7 +13,7 @@
 
 <img src="images/icons.png">
 
-Resources:
+# Resources:
  
 <a href = "https://lottiefiles.com/80680-online-study">LottieFiles</a>
 
