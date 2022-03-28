@@ -43,7 +43,6 @@ class InfoFragment : Fragment(R.layout.fragment_info) {
             loadActionBar(wordObj.wordName!!)
             wordTranslation.text = wordObj.wordTranslation
             if (wordObj.wordImage == null) {
-                wordImage.setImageResource(R.drawable.place_holder)
             } else {
                 wordImage.setImageURI(Uri.parse(wordObj.wordImage))
             }

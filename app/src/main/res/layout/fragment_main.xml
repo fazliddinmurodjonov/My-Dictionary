@@ -23,7 +23,7 @@
         app:tabIndicatorAnimationMode="elastic"
         app:tabMode="auto"
         app:tabMaxWidth="0dp"
-        app:tabRippleColor="#3F51B5"
+        app:tabRippleColor="@color/background"
         app:tabTextColor="@color/black"
         tools:ignore="MissingConstraints" />
 
