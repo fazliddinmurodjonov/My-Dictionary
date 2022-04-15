@@ -5,10 +5,10 @@
  # <b>Application UI<b>
 
  
-<img src="images/video.gif" width = "278" > <img src="images/img_1.jpg" width = "250" > <img src="images/img_2.jpg" width = "250" >
-<img src="images/img_3.jpg" width = "250" > <img src="images/img_4.jpg" width = "250" > <img src="images/img_5.jpg" width = "250" >
-<img src="images/img_6.jpg" width = "250" > <img src="images/img_7.jpg" width = "250" > <img src="images/img_8.jpg" width = "250" >
-<img src="images/img_9.jpg" width = "250" > <img src="images/img_10.jpg" width = "250">
+<img src="images/video.gif" width = "278" > <img src="images/img_1.jpg" width = "270" > <img src="images/img_2.jpg" width = "270" >
+<img src="images/img_3.jpg" width = "270" > <img src="images/img_4.jpg" width = "270" > <img src="images/img_5.jpg" width = "270" >
+<img src="images/img_6.jpg" width = "270" > <img src="images/img_7.jpg" width = "270" > <img src="images/img_8.jpg" width = "270" >
+<img src="images/img_9.jpg" width = "270" > <img src="images/img_10.jpg" width = "270">
 
 
 
@@ -18,7 +18,7 @@
 
 # Resources:
  
-<a href = "https://lottiefiles.com/80680-online-study">LottieFiles</a>
+<b><a href = "https://lottiefiles.com/80680-online-study">LottieFiles</a><b>
 
-<a href = "https://www.figma.com/file/b04itioOHZFXmgeonQGMPw/My-Dictionary?node-id=0%3A1">Figma</a>
+<b><a href = "https://www.figma.com/file/b04itioOHZFXmgeonQGMPw/My-Dictionary?node-id=0%3A1">Figma</a><b>
 
